@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-image: url("/image/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+
+}
+/**********header************/
+
+header{
+    background-color: rgb(233, 233, 233);
+    top: 0;
+   
+  }
+.cabecera nav{
+    list-style: none;
+    display: fixed;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    align-content: center;  
+    display: flex;
+    justify-content: center;
+
+
+}
+
+  .logo{
+   display: flex;
+   justify-content: left;
+   list-style: none;
+   
+  }
+  .menu{
+    list-style: none;
+    display: fixed;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    align-content: center;  
+    display: flex;
+    justify-content: center;
+    align-items: start;
+ 
+  }
+
+  .menu li a{
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration:none;
+    padding: 1rem;
+    
+  }
+   
+   .menu li a:hover {  
+    color: white;  
+    background-color: black;
+    
+  }  
+  @media (max-width:800px)
+  {
+    .logo{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        
+        
+       }
+
+  }
+  /**********fin header********
+  
+
+
+
+  /**********main de index************/
+
+  .cuerpo{
+    height: 100vh; /*VH significa viewport height altura maxima de la pantalla(altura del dispositivo). También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la*/
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25% /*aqui le digo cuantas columnas si pongo 2 vecex 100px son 2 columnas de 100 px*/
+    /*grid-template-rows: 200px 200px; /*aqui le digo cuantas filas va a tener, si pongo 2 veces 200px seran 2 filas*/; 
+    grid-template-columns: 1fr 1fr; /*aqui divido las columnas en fraccion 1fr = 1 fraccion si son 5 columnas cada fraccion son 20%*/
+    grid-template-rows: 1fr;
+    grid-template-areas: /*aqui puedo ordenar como quiero que ocupe cada clase el espacio
+    hay que declarar en cada clase como se llamara la area*/
+    "izquierda derecha";
+
+    gap: 1rem 1rem; /*para darle separacion*/
+    
+}
+
+.titulo{
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  color: antiquewhite;
+  background:rgba(20, 17, 61, 0.9);
+  border-radius: 5%;
+  justify-content: center; /*deja en el centro de la fila*/
+  align-items: center;
+}
+
+.contenido-izquierda{
+    
+    grid-area: izquierda;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+
+}
+.contenido-izquierda:hover{
+  color: white;  
+  background-color:rgba(20, 17, 61, 0.9);
+  text-decoration:none;
+  border-radius: 100;
+}
+.contenido-izquierda h1{
+  color: white;
+  text-decoration:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido-izquierda a{
+  text-decoration: none;
+}
+
+.contenido-derecha{
+    grid-area: derecha;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5%;
+    
+
+    
+}
+.contenido-derecha:hover{
+  background: rgba(20, 17, 61, 0.9);
+}
+
+.contenido-derecha h1{
+  color: white;
+  text-decoration:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido-derecha a{
+  text-decoration: none;
+}
+
+@media (max-width:800px){
+  .cuerpo{
+    height: 100vh; /*VH significa viewport height altura maxima de la pantalla(altura del dispositivo). También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la*/
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25% /*aqui le digo cuantas columnas si pongo 2 vecex 100px son 2 columnas de 100 px*/
+    /*grid-template-rows: 200px 200px; /*aqui le digo cuantas filas va a tener, si pongo 2 veces 200px seran 2 filas*/; 
+    grid-template-columns: 1fr; /*aqui divido las columnas en fraccion 1fr = 1 fraccion si son 5 columnas cada fraccion son 20%*/
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: /*aqui puedo ordenar como quiero que ocupe cada clase el espacio
+    hay que declarar en cada clase como se llamara la area*/
+    "izquierda"
+    "derecha";
+
+    gap: 1rem 1rem; /*para darle separacion*/
+    
+}
+
+}
+  /**********fin cuerpo de index************/
+
+
+  /**********formulario contacto************/
+
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: rgba(20, 17, 61, 0.9); 
+    padding-left: 30px; 
+  }
+  
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #44a4ab; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #448aab; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: rgba(21, 112, 138, 0.9);; 
+    border-color: #4493ab; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+  span{
+    color: #ca043f; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+  .titulo-formulario{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: white;
+  }
+  
+  
+  .subtitulo-formulario{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: white;   
+  }
+  
+  
+  p{
+    font-size: 14px; 
+    color: white; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+/**********fin formulario contacto************/
+
+
+  /**********footer************/
+
+footer section{
+    background: rgba(20, 17, 61, 0.9); 
+    height: 18rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+    
+    
+    
+    
+  
+  .pie{
+    padding-left: 15rem;
+    padding-top: 6rem;
+  }
+  .contacto-pie p{
+  
+    font-size: 18px;
+    color: aliceblue;
+  }
+  .social{
+    padding-right: 15rem;
+  }
+
+  
+
