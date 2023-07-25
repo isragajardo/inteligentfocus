@@ -18,7 +18,7 @@ body{
 /**********header************/
 
 header{
-    background-color: rgb(233, 233, 233);
+  background: rgba(20, 17, 61, 0.9); 
     top: 0;
    
   }
@@ -54,7 +54,7 @@ header{
 
   .menu li a{
     font-family: 'Bebas Neue', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(201, 201, 201);
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration:none;
@@ -63,7 +63,7 @@ header{
   }
    
    .menu li a:hover {  
-    color: white;  
+    color:  rgb(201, 201, 201);
     background-color: black;
     
   }  
@@ -103,7 +103,7 @@ header{
 .titulo{
   padding: 1rem 0 1rem 0;
   display: flex;
-  color: antiquewhite;
+  color:  rgb(201, 201, 201);
   background:rgba(20, 17, 61, 0.9);
   border-radius: 5%;
   justify-content: center; /*deja en el centro de la fila*/
@@ -121,13 +121,13 @@ header{
 
 }
 .contenido-izquierda:hover{
-  color: white;  
+  color:  rgb(201, 201, 201); 
   background-color:rgba(20, 17, 61, 0.9);
   text-decoration:none;
   border-radius: 100;
 }
 .contenido-izquierda h1{
-  color: white;
+  color:  rgb(201, 201, 201);
   text-decoration:none;
   display: flex;
   justify-content: center;
@@ -152,7 +152,7 @@ header{
 }
 
 .contenido-derecha h1{
-  color: white;
+  color:  rgb(201, 201, 201);
   text-decoration:none;
   display: flex;
   justify-content: center;
@@ -310,31 +310,13 @@ header{
 
   /**********footer************/
 
-footer section{
+.pie{
     background: rgba(20, 17, 61, 0.9); 
-    height: 18rem;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
    
 }
     
-    
-    
-    
-  
-  .pie{
-    padding-left: 15rem;
-    padding-top: 6rem;
-  }
-  .contacto-pie p{
-  
-    font-size: 18px;
-    color: aliceblue;
-  }
-  .social{
-    padding-right: 15rem;
-  }
+
 
   
 
