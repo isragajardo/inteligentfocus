@@ -127,7 +127,7 @@ header{
   border-radius: 100;
 }
 .contenido-izquierda h1{
-  color:  rgb(201, 201, 201);
+  color: rgb(201, 201, 201); 
   text-decoration:none;
   display: flex;
   justify-content: center;
@@ -152,7 +152,7 @@ header{
 }
 
 .contenido-derecha h1{
-  color:  rgb(201, 201, 201);
+  color: rgb(201, 201, 201); 
   text-decoration:none;
   display: flex;
   justify-content: center;
