@@ -73,7 +73,7 @@ header{
    
    .menu li a:hover {  
     color:  rgb(201, 201, 201);
-    background-color: black;
+    background-color: rgb(26, 43, 78);
     
   }  
   @media (max-width:800px)
@@ -117,21 +117,11 @@ header{
   justify-content: center; /*deja en el centro de la fila*/
   align-items: center;
   text-decoration: none;
-<<<<<<< HEAD
-  font-size: 1.8rem;
- 
-}
-@media (max-width:800px){
-  .titulo{
-    display: none;
-  }
-=======
   
 }
 .titulo-sm{
   display: none;
 
->>>>>>> staging
 }
 @media(max-width: 800px){
   .titulo-xl{
