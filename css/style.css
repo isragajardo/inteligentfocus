@@ -76,6 +76,9 @@ header{
         
         
        }
+    .menu{
+      display: none;
+    }
 
   }
   /**********fin header********
@@ -102,7 +105,7 @@ header{
     padding-bottom: 10%;
 }
 
-.titulo a{
+.titulo-xl h2{
   padding: 1rem 0 1rem 0;
   display: flex;
   color:  rgb(201, 201, 201);
@@ -113,9 +116,29 @@ header{
   text-decoration: none;
   
 }
-.titulo h2{
-  font-size: 1.8rem;
+.titulo-sm{
+  display: none;
+
 }
+@media(max-width: 800px){
+  .titulo-xl{
+    display: none;
+
+  }
+  .titulo-sm{
+    padding: 1rem 0 1rem 0;
+  display: flex;
+  color:  rgb(201, 201, 201);
+  background:rgba(20, 17, 61, 0.9);
+  border-radius: 5%;
+  justify-content: center; /*deja en el centro de la fila*/
+  align-items: center;
+  text-decoration: none;
+  
+  }
+}
+
+
 
 
 .contenido-izquierda{
