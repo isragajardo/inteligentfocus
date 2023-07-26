@@ -99,7 +99,7 @@ header{
     ;
 
     gap: 1rem 1rem; /*para darle separacion*/
-    
+    padding-bottom: 10%;
 }
 
 .titulo a{
@@ -244,6 +244,7 @@ text-decoration: none;
     "derecha-abajo";
 
     gap: 1rem 1rem; /*para darle separacion*/
+    margin-bottom: 10rem;
     
     
 }
