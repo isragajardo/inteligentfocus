@@ -38,8 +38,17 @@ header{
    display: flex;
    justify-content: left;
    list-style: none;
-   
   }
+  @media (max-width:800px)
+  {
+
+    .logo{
+      
+      margin-right: 3.5rem;
+      
+     }
+  }
+
   .menu{
     list-style: none;
     display: fixed;
@@ -69,13 +78,7 @@ header{
   }  
   @media (max-width:800px)
   {
-    .logo{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        
-        
-       }
+    
     .menu{
       display: none;
     }
@@ -267,13 +270,13 @@ text-decoration: none;
     "derecha-abajo";
 
     gap: 1rem 1rem; /*para darle separacion*/
-    margin-bottom: 10rem;
+   
     
     
 }
 .container{
 
-  padding-bottom: 80%;
+  padding-bottom: 20%;
   }
 
 
@@ -337,8 +340,8 @@ text-decoration: none;
     margin-bottom: 20px; 
     margin-top: 10px;   
     text-transform: uppercase;
-    background-color: rgba(21, 112, 138, 0.9);; 
-    border-color: #4493ab; 
+    background-color: rgba(54, 51, 90, 0.9);; 
+    border-color:  #315a81; 
     border-style: solid; 
     border-radius: 10px;  
     width: 420px;   
@@ -347,7 +350,8 @@ text-decoration: none;
   
   
   button p{
-    color: #fff; 
+    color: rgb(255, 255, 255); 
+    font-size: 1.5rem;
   }
   
   
@@ -358,7 +362,7 @@ text-decoration: none;
   
   .aviso{
     font-size: 13px;  
-    color: #0e0e0e;  
+    color: #ffffff;  
   }
   
   
@@ -384,25 +388,25 @@ text-decoration: none;
   
   
   ::-webkit-input-placeholder {
-   color: #a8a8a8;
+   color: 1px solid #4892d8;;
   }
   
   
   ::-webkit-textarea-placeholder {
-   color: #a8a8a8;
+   color: 1px solid #4892d8;
   }
   
   
   .formulario input:focus{
     outline:0;
-    border: 1px solid #97d848;
+    border: 1px solid #4892d8;
   }
   
   
   .formulario textarea:focus{
     outline:0;
-    border: 1px solid #97d848;
-  }
+    border: 1px 1px solid #4892d8;
+    }
 /**********fin formulario contacto************/
 
 
