@@ -67,8 +67,7 @@ header .cabecera nav .menu li a:hover {
   }
 }
 
-/**********main de index************/
-.titulo-xl h2 {
+main .titulo-xl h2 {
   padding: 1rem 0 1rem 0;
   display: flex;
   color: rgb(201, 201, 201);
@@ -78,16 +77,14 @@ header .cabecera nav .menu li a:hover {
   align-items: center;
   text-decoration: none;
 }
-
-.titulo-sm {
+main .titulo-sm {
   display: none;
 }
-
 @media (max-width: 800px) {
-  .titulo-xl {
+  main .titulo-xl {
     display: none;
   }
-  .titulo-sm {
+  main .titulo-sm {
     padding: 1rem 0 1rem 0;
     display: flex;
     color: rgb(201, 201, 201);
@@ -98,7 +95,7 @@ header .cabecera nav .menu li a:hover {
     text-decoration: none;
   }
 }
-.cuerpo {
+main .cuerpo {
   height: 100vh; /*VH significa viewport height altura maxima de la pantalla(altura del dispositivo). También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la*/
   display: grid;
   /*grid-template-columns: 25% 25% 25% 25% /*aqui le digo cuantas columnas si pongo 2 vecex 100px son 2 columnas de 100 px*/
@@ -109,8 +106,7 @@ header .cabecera nav .menu li a:hover {
   gap: 1rem 1rem; /*para darle separacion*/
   padding-bottom: 10%;
 }
-
-.contenido-izquierda {
+main .contenido-izquierda {
   grid-area: izquierda;
   border-radius: 5%;
   display: flex;
@@ -118,15 +114,13 @@ header .cabecera nav .menu li a:hover {
   align-items: center;
   text-decoration: none;
 }
-
-.contenido-izquierda:hover {
+main .contenido-izquierda:hover {
   color: rgb(201, 201, 201);
   background-color: rgba(20, 17, 61, 0.9);
   text-decoration: none;
   border-radius: 100;
 }
-
-.contenido-izquierda h1 {
+main .contenido-izquierda h1 {
   color: rgb(201, 201, 201);
   text-decoration: none;
   display: flex;
@@ -134,24 +128,20 @@ header .cabecera nav .menu li a:hover {
   align-items: center;
   font-size: large;
 }
-
-.contenido-izquierda a {
+main .contenido-izquierda a {
   text-decoration: none;
 }
-
-.contenido-derecha {
+main .contenido-derecha {
   grid-area: derecha;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5%;
 }
-
-.contenido-derecha:hover {
+main .contenido-derecha:hover {
   background: rgba(20, 17, 61, 0.9);
 }
-
-.contenido-derecha h1 {
+main .contenido-derecha h1 {
   color: rgb(201, 201, 201);
   text-decoration: none;
   display: flex;
@@ -159,12 +149,10 @@ header .cabecera nav .menu li a:hover {
   align-items: center;
   font-size: large;
 }
-
-.contenido-derecha a {
+main .contenido-derecha a {
   text-decoration: none;
 }
-
-.contenido-abajo-izquierda {
+main .contenido-abajo-izquierda {
   grid-area: izquierda-abajo;
   border-radius: 5%;
   display: flex;
@@ -172,15 +160,13 @@ header .cabecera nav .menu li a:hover {
   align-items: center;
   text-decoration: none;
 }
-
-.contenido-abajo-izquierda:hover {
+main .contenido-abajo-izquierda:hover {
   color: rgb(201, 201, 201);
   background-color: rgba(20, 17, 61, 0.9);
   text-decoration: none;
   border-radius: 100;
 }
-
-.contenido-abajo-izquierda h1 {
+main .contenido-abajo-izquierda h1 {
   color: rgb(201, 201, 201);
   text-decoration: none;
   display: flex;
@@ -188,24 +174,20 @@ header .cabecera nav .menu li a:hover {
   align-items: center;
   font-size: large;
 }
-
-.contenido-abajo-izquierda a {
+main .contenido-abajo-izquierda a {
   text-decoration: none;
 }
-
-.contenido-abajo-derecha {
+main .contenido-abajo-derecha {
   grid-area: derecha-abajo;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5%;
 }
-
-.contenido-abajo-derecha:hover {
+main .contenido-abajo-derecha:hover {
   background: rgba(20, 17, 61, 0.9);
 }
-
-.contenido-abajo-derecha h1 {
+main .contenido-abajo-derecha h1 {
   color: rgb(201, 201, 201);
   text-decoration: none;
   display: flex;
@@ -213,13 +195,11 @@ header .cabecera nav .menu li a:hover {
   align-items: center;
   font-size: large;
 }
-
-.contenido-abajo-derecha a {
+main .contenido-abajo-derecha a {
   text-decoration: none;
 }
-
 @media (max-width: 800px) {
-  .cuerpo {
+  main .cuerpo {
     height: 100vh; /*VH significa viewport height altura maxima de la pantalla(altura del dispositivo). También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la*/
     display: grid;
     /*grid-template-columns: 25% 25% 25% 25% /*aqui le digo cuantas columnas si pongo 2 vecex 100px son 2 columnas de 100 px*/
@@ -229,18 +209,20 @@ header .cabecera nav .menu li a:hover {
     grid-template-areas: "izquierda" "derecha" "izquierda-abajo" "derecha-abajo";
     gap: 1rem 1rem; /*para darle separacion*/
   }
-  .container {
+  main .container {
     padding-bottom: 20%;
   }
 }
-/**********fin cuerpo de index************/
-/**********pag de nosotros***************/
+
 .contenido-nosotros {
   margin: 2rem 5rem 10rem 5rem;
   background: rgba(20, 17, 61, 0.9);
   border-radius: 5%;
 }
 
+/**********main de index************/
+/**********fin cuerpo de index************/
+/**********pag de nosotros***************/
 /**********formulario contacto************/
 .contact_form {
   width: 460px;

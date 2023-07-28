@@ -1,58 +1,37 @@
-$colorprincipal : rgba(20, 17, 61, 0.9); 
 
+    .titulo-xl h2{
+        padding: 1rem 0 1rem 0;
+        display: flex;
+        color:  rgb(201, 201, 201);
+        background:rgba(20, 17, 61, 0.9);
+        border-radius: 5%;
+        justify-content: center; /*deja en el centro de la fila*/
+        align-items: center;
+        text-decoration: none;
+        
+      }
+      .titulo-sm{
+        display: none;
+      
+      }
+      @media(max-width: 800px){
+        .titulo-xl{
+          display: none;
+      
+        }
+        .titulo-sm{
+          padding: 1rem 0 1rem 0;
+        display: flex;
+        color:  rgb(201, 201, 201);
+        background:rgba(20, 17, 61, 0.9);
+        border-radius: 5%;
+        justify-content: center; /*deja en el centro de la fila*/
+        align-items: center;
+        text-decoration: none;
+        
+        }
+      }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-}
-body{
-  background-image: url("../image/fondo.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  
-
-}
-/**********header************/
-
-@import "./particiones/header";
-@import "./particiones/main";
-@import "./particiones/nosotros";
-
-
-  
-
-
-
-  /**********main de index************/
-
-
-
-
-
-
-
- 
-
-
-
-  /**********fin cuerpo de index************/
-
-
-  /**********pag de nosotros***************/
-
-
-
-
-
-
-
-  /**********formulario contacto************/
 
 .contact_form{  
     width: 460px; 
@@ -175,14 +154,3 @@ body{
     outline:0;
     border: 1px 1px solid #4892d8;
     }
-/**********fin formulario contacto************/
-
-
-  /**********footer************/
-
-.pie{
-    background: rgba(20, 17, 61, 0.9); 
-
-   
-}
-

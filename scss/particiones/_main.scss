@@ -1,0 +1,193 @@
+main{
+
+
+.titulo-xl h2{
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    color:  rgb(201, 201, 201);
+    background:rgba(20, 17, 61, 0.9);
+    border-radius: 5%;
+    justify-content: center; /*deja en el centro de la fila*/
+    align-items: center;
+    text-decoration: none;
+    
+  }
+  .titulo-sm{
+    display: none;
+  
+  }
+  @media(max-width: 800px){
+    .titulo-xl{
+      display: none;
+  
+    }
+    .titulo-sm{
+      padding: 1rem 0 1rem 0;
+    display: flex;
+    color:  rgb(201, 201, 201);
+    background:rgba(20, 17, 61, 0.9);
+    border-radius: 5%;
+    justify-content: center; /*deja en el centro de la fila*/
+    align-items: center;
+    text-decoration: none;
+    
+    }
+  }
+
+
+
+  .cuerpo{
+    height: 100vh; /*VH significa viewport height altura maxima de la pantalla(altura del dispositivo). También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la*/
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25% /*aqui le digo cuantas columnas si pongo 2 vecex 100px son 2 columnas de 100 px*/
+    /*grid-template-rows: 200px 200px; /*aqui le digo cuantas filas va a tener, si pongo 2 veces 200px seran 2 filas*/; 
+    grid-template-columns: 1fr 1fr; /*aqui divido las columnas en fraccion 1fr = 1 fraccion si son 5 columnas cada fraccion son 20%*/
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: /*aqui puedo ordenar como quiero que ocupe cada clase el espacio
+    hay que declarar en cada clase como se llamara la area*/
+    "izquierda derecha"
+    "izquierda-abajo derecha-abajo"
+    ;
+
+    gap: 1rem 1rem; /*para darle separacion*/
+    padding-bottom: 10%;
+}
+
+
+
+.contenido-izquierda{
+    
+    grid-area: izquierda;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+
+}
+.contenido-izquierda:hover{
+  color:  rgb(201, 201, 201); 
+  background-color:rgba(20, 17, 61, 0.9);
+  text-decoration:none;
+  border-radius: 100;
+}
+.contenido-izquierda h1{
+  color: rgb(201, 201, 201); 
+  text-decoration:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.contenido-izquierda a{
+  text-decoration: none;
+}
+
+.contenido-derecha{
+    grid-area: derecha;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5%;
+    
+
+    
+}
+.contenido-derecha:hover{
+  background: rgba(20, 17, 61, 0.9);
+}
+
+.contenido-derecha h1{
+  color: rgb(201, 201, 201); 
+  text-decoration:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.contenido-derecha a{
+  text-decoration: none;
+}
+
+
+
+.contenido-abajo-izquierda{
+    
+  grid-area: izquierda-abajo;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:none;
+  
+
+}
+.contenido-abajo-izquierda:hover{
+color:  rgb(201, 201, 201); 
+background-color:rgba(20, 17, 61, 0.9);
+text-decoration:none;
+border-radius: 100;
+}
+.contenido-abajo-izquierda h1{
+color: rgb(201, 201, 201); 
+text-decoration:none;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: large;
+}
+.contenido-abajo-izquierda a{
+text-decoration: none;
+}
+
+.contenido-abajo-derecha{
+  grid-area: derecha-abajo;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 5%;
+  
+
+  
+}
+.contenido-abajo-derecha:hover{
+background: rgba(20, 17, 61, 0.9);
+}
+
+.contenido-abajo-derecha h1{
+color: rgb(201, 201, 201); 
+text-decoration:none;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: large;
+}
+.contenido-abajo-derecha a{
+text-decoration: none;
+}
+@media (max-width:800px){
+  .cuerpo{
+    height: 100vh; /*VH significa viewport height altura maxima de la pantalla(altura del dispositivo). También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la*/
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25% /*aqui le digo cuantas columnas si pongo 2 vecex 100px son 2 columnas de 100 px*/
+    /*grid-template-rows: 200px 200px; /*aqui le digo cuantas filas va a tener, si pongo 2 veces 200px seran 2 filas*/; 
+    grid-template-columns: 1fr; /*aqui divido las columnas en fraccion 1fr = 1 fraccion si son 5 columnas cada fraccion son 20%*/
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: /*aqui puedo ordenar como quiero que ocupe cada clase el espacio
+    hay que declarar en cada clase como se llamara la area*/
+    "izquierda"
+    "derecha"
+    "izquierda-abajo"
+    "derecha-abajo";
+
+    gap: 1rem 1rem; /*para darle separacion*/
+   
+    
+    
+}
+.container{
+
+  padding-bottom: 20%;
+  }
+}
+}
