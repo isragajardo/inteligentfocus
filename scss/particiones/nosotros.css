@@ -1,5 +1,13 @@
+/*url("../image/fondo.jpg")*/
 .contenido-nosotros {
+  border-radius: 8%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpo-nosotros .contenedor {
   margin: 2rem 5rem 10rem 5rem;
-  background: rgba(20, 17, 61, 0.9);
-  border-radius: 5%;
+  background: rgba(4, 5, 48, 0.9);
 }/*# sourceMappingURL=nosotros.css.map */

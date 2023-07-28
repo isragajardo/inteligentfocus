@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*url("../image/fondo.jpg")*/
+/*url("../image/fondo.jpg")*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap");
 * {
@@ -8,7 +10,7 @@
 }
 
 body {
-  background-image: url("../image/fondo.jpg");
+  background-color: rgb(84, 99, 136);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -16,8 +18,9 @@ body {
 }
 
 /**********header************/
+/*url("../image/fondo.jpg")*/
 header {
-  background: rgba(20, 17, 61, 0.9);
+  background: rgba(4, 5, 48, 0.9);
   top: 0;
 }
 header .cabecera nav {
@@ -59,7 +62,7 @@ header .cabecera nav .menu li a {
 }
 header .cabecera nav .menu li a:hover {
   color: rgb(201, 201, 201);
-  background-color: rgb(49, 49, 94);
+  background-color: rgba(4, 5, 48, 0.9);
 }
 @media (max-width: 800px) {
   header .cabecera nav .menu {
@@ -67,29 +70,29 @@ header .cabecera nav .menu li a:hover {
   }
 }
 
-main .titulo-xl h2 {
+.titulo-xl h2 {
   padding: 1rem 0 1rem 0;
   display: flex;
-  color: rgb(201, 201, 201);
-  background: rgba(20, 17, 61, 0.9);
-  border-radius: 5%;
+  color: rgb(0, 0, 0);
+  background: rgba(243, 242, 242, 0.9);
   justify-content: center; /*deja en el centro de la fila*/
   align-items: center;
   text-decoration: none;
 }
-main .titulo-sm {
+
+.titulo-sm {
   display: none;
 }
+
 @media (max-width: 800px) {
-  main .titulo-xl {
+  .titulo-xl {
     display: none;
   }
-  main .titulo-sm {
+  .titulo-sm {
     padding: 1rem 0 1rem 0;
     display: flex;
-    color: rgb(201, 201, 201);
-    background: rgba(20, 17, 61, 0.9);
-    border-radius: 5%;
+    color: rgb(0, 0, 0);
+    background: rgba(243, 242, 242, 0.9);
     justify-content: center; /*deja en el centro de la fila*/
     align-items: center;
     text-decoration: none;
@@ -104,7 +107,9 @@ main .cuerpo {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "izquierda derecha" "izquierda-abajo derecha-abajo";
   gap: 1rem 1rem; /*para darle separacion*/
-  padding-bottom: 10%;
+  background-color: rgba(4, 5, 48, 0.9);
+  border-radius: 5%;
+  margin-bottom: 1rem;
 }
 main .contenido-izquierda {
   grid-area: izquierda;
@@ -116,7 +121,7 @@ main .contenido-izquierda {
 }
 main .contenido-izquierda:hover {
   color: rgb(201, 201, 201);
-  background-color: rgba(20, 17, 61, 0.9);
+  background-color: rgba(36, 32, 94, 0.9);
   text-decoration: none;
   border-radius: 100;
 }
@@ -139,7 +144,7 @@ main .contenido-derecha {
   border-radius: 5%;
 }
 main .contenido-derecha:hover {
-  background: rgba(20, 17, 61, 0.9);
+  background: rgba(36, 32, 94, 0.9);
 }
 main .contenido-derecha h1 {
   color: rgb(201, 201, 201);
@@ -162,7 +167,7 @@ main .contenido-abajo-izquierda {
 }
 main .contenido-abajo-izquierda:hover {
   color: rgb(201, 201, 201);
-  background-color: rgba(20, 17, 61, 0.9);
+  background-color: rgba(36, 32, 94, 0.9);
   text-decoration: none;
   border-radius: 100;
 }
@@ -185,7 +190,7 @@ main .contenido-abajo-derecha {
   border-radius: 5%;
 }
 main .contenido-abajo-derecha:hover {
-  background: rgba(20, 17, 61, 0.9);
+  background: rgba(36, 32, 94, 0.9);
 }
 main .contenido-abajo-derecha h1 {
   color: rgb(201, 201, 201);
@@ -215,45 +220,23 @@ main .contenido-abajo-derecha a {
 }
 
 .pie {
-  background: rgba(20, 17, 61, 0.9);
+  background: rgba(4, 5, 48, 0.9);
 }
 
+/*url("../image/fondo.jpg")*/
 .contenido-nosotros {
-  margin: 2rem 5rem 10rem 5rem;
-  background: rgba(20, 17, 61, 0.9);
-  border-radius: 5%;
-}
-
-.titulo-xl h2 {
-  padding: 1rem 0 1rem 0;
+  border-radius: 8%;
   display: flex;
-  color: rgb(201, 201, 201);
-  background: rgba(20, 17, 61, 0.9);
-  border-radius: 5%;
-  justify-content: center; /*deja en el centro de la fila*/
+  align-content: center;
+  justify-content: center;
   align-items: center;
-  text-decoration: none;
 }
 
-.titulo-sm {
-  display: none;
+.cuerpo-nosotros .contenedor {
+  margin: 2rem 5rem 10rem 5rem;
+  background: rgba(4, 5, 48, 0.9);
 }
 
-@media (max-width: 800px) {
-  .titulo-xl {
-    display: none;
-  }
-  .titulo-sm {
-    padding: 1rem 0 1rem 0;
-    display: flex;
-    color: rgb(201, 201, 201);
-    background: rgba(20, 17, 61, 0.9);
-    border-radius: 5%;
-    justify-content: center; /*deja en el centro de la fila*/
-    align-items: center;
-    text-decoration: none;
-  }
-}
 .contact_form {
   width: 460px;
   height: auto;

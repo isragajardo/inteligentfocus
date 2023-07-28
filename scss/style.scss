@@ -1,5 +1,8 @@
-$colorprincipal : rgba(20, 17, 61, 0.9); 
-
+$colorprincipal :  rgba(44, 45, 109, 0.9); 
+$colorsecundario : rgba(8, 7, 26, 0.9);
+$fondo : rgb(84, 99, 136);
+/*url("../image/fondo.jpg")*/
+/*url("../image/fondo.jpg")*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap');
@@ -10,7 +13,7 @@ $colorprincipal : rgba(20, 17, 61, 0.9);
   
 }
 body{
-  background-image: url("../image/fondo.jpg");
+  background-color: $fondo;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -19,7 +22,7 @@ body{
 
 }
 /**********header************/
-
+@import "./particiones/variables";
 @import "./particiones/header";
 @import "./particiones/main";
 @import "./particiones/footer";
