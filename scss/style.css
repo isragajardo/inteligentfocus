@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*$colorprincipal :  rgba(44, 45, 109, 0.9); 
+$colorsecundario : rgba(8, 7, 26, 0.9);
+$fondo : rgb(84, 99, 136);*/
 /*url("../image/fondo.jpg")*/
 /*url("../image/fondo.jpg")*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
@@ -10,7 +13,7 @@
 }
 
 body {
-  background-color: rgb(84, 99, 136);
+  background: rgb(84, 99, 136);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
