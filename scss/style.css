@@ -214,16 +214,46 @@ main .contenido-abajo-derecha a {
   }
 }
 
+.pie {
+  background: rgba(20, 17, 61, 0.9);
+}
+
 .contenido-nosotros {
   margin: 2rem 5rem 10rem 5rem;
   background: rgba(20, 17, 61, 0.9);
   border-radius: 5%;
 }
 
-/**********main de index************/
-/**********fin cuerpo de index************/
-/**********pag de nosotros***************/
-/**********formulario contacto************/
+.titulo-xl h2 {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  color: rgb(201, 201, 201);
+  background: rgba(20, 17, 61, 0.9);
+  border-radius: 5%;
+  justify-content: center; /*deja en el centro de la fila*/
+  align-items: center;
+  text-decoration: none;
+}
+
+.titulo-sm {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .titulo-xl {
+    display: none;
+  }
+  .titulo-sm {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    color: rgb(201, 201, 201);
+    background: rgba(20, 17, 61, 0.9);
+    border-radius: 5%;
+    justify-content: center; /*deja en el centro de la fila*/
+    align-items: center;
+    text-decoration: none;
+  }
+}
 .contact_form {
   width: 460px;
   height: auto;
@@ -330,10 +360,4 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px 1px solid #4892d8;
-}
-
-/**********fin formulario contacto************/
-/**********footer************/
-.pie {
-  background: rgba(20, 17, 61, 0.9);
 }/*# sourceMappingURL=style.css.map */
