@@ -1,0 +1,83 @@
+header
+{
+  background: $colorprincipal; 
+    top: 0;
+    .cabecera nav
+    {
+        list-style: none;
+        display: fixed;
+        flex-wrap: wrap;
+        gap: 1rem; 
+        align-content: center;  
+        display: flex;
+        justify-content: center;
+        .logo
+        {
+            display: flex;
+            justify-content: left;
+            list-style: none;
+        }
+        @media (max-width:800px)
+        {
+      
+          .logo
+          {
+            
+            margin-right: 3.5rem;
+            
+           }
+        }
+
+        .menu
+        {
+            list-style: none;
+            display: fixed;
+            flex-wrap: wrap;
+            gap: 1rem; 
+            align-content: center;  
+            display: flex;
+            justify-content: center;
+            align-items: start;
+
+            li a
+           {
+              font-family: 'Bebas Neue', sans-serif;
+              color: rgb(201, 201, 201);
+              font-size: 1.8rem;
+              font-weight: bold;
+              text-decoration:none;
+              padding: 1rem;
+    
+            }
+            li a:hover
+            {  
+              color:  rgb(201, 201, 201);
+               background-color: rgb(49, 49, 94);
+        
+            }  
+
+   
+     
+        }
+        @media (max-width:800px)
+        {
+        
+            .menu
+            {
+             display: none;
+            }
+    
+        }
+
+      
+    
+    
+    }
+    
+    
+
+    
+
+  
+   
+}

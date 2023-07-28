@@ -1,0 +1,137 @@
+.titulo-xl h2 {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  color: rgb(201, 201, 201);
+  background: rgba(20, 17, 61, 0.9);
+  border-radius: 5%;
+  justify-content: center; /*deja en el centro de la fila*/
+  align-items: center;
+  text-decoration: none;
+}
+
+.titulo-sm {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .titulo-xl {
+    display: none;
+  }
+  .titulo-sm {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    color: rgb(201, 201, 201);
+    background: rgba(20, 17, 61, 0.9);
+    border-radius: 5%;
+    justify-content: center; /*deja en el centro de la fila*/
+    align-items: center;
+    text-decoration: none;
+  }
+}
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(20, 17, 61, 0.9);
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #44a4ab;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #448aab;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: rgba(54, 51, 90, 0.9);
+  border-color: #315a81;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+span {
+  color: #ca043f;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.titulo-formulario {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.subtitulo-formulario {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: 1px solid #4892d8;
+}
+
+::-webkit-textarea-placeholder {
+  color: 1px solid #4892d8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #4892d8;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px 1px solid #4892d8;
+}/*# sourceMappingURL=contacto.css.map */

@@ -1,0 +1,363 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../image/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/**********header************/
+header {
+  background: rgba(20, 17, 61, 0.9);
+  top: 0;
+}
+header .cabecera nav {
+  list-style: none;
+  display: fixed;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+header .cabecera nav .logo {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+}
+@media (max-width: 800px) {
+  header .cabecera nav .logo {
+    margin-right: 3.5rem;
+  }
+}
+header .cabecera nav .menu {
+  list-style: none;
+  display: fixed;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+header .cabecera nav .menu li a {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(201, 201, 201);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem;
+}
+header .cabecera nav .menu li a:hover {
+  color: rgb(201, 201, 201);
+  background-color: rgb(49, 49, 94);
+}
+@media (max-width: 800px) {
+  header .cabecera nav .menu {
+    display: none;
+  }
+}
+
+main .titulo-xl h2 {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  color: rgb(201, 201, 201);
+  background: rgba(20, 17, 61, 0.9);
+  border-radius: 5%;
+  justify-content: center; /*deja en el centro de la fila*/
+  align-items: center;
+  text-decoration: none;
+}
+main .titulo-sm {
+  display: none;
+}
+@media (max-width: 800px) {
+  main .titulo-xl {
+    display: none;
+  }
+  main .titulo-sm {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    color: rgb(201, 201, 201);
+    background: rgba(20, 17, 61, 0.9);
+    border-radius: 5%;
+    justify-content: center; /*deja en el centro de la fila*/
+    align-items: center;
+    text-decoration: none;
+  }
+}
+main .cuerpo {
+  height: 100vh; /*VH significa viewport height altura maxima de la pantalla(altura del dispositivo). También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la*/
+  display: grid;
+  /*grid-template-columns: 25% 25% 25% 25% /*aqui le digo cuantas columnas si pongo 2 vecex 100px son 2 columnas de 100 px*/
+  /*grid-template-rows: 200px 200px; /*aqui le digo cuantas filas va a tener, si pongo 2 veces 200px seran 2 filas*/
+  grid-template-columns: 1fr 1fr; /*aqui divido las columnas en fraccion 1fr = 1 fraccion si son 5 columnas cada fraccion son 20%*/
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "izquierda derecha" "izquierda-abajo derecha-abajo";
+  gap: 1rem 1rem; /*para darle separacion*/
+  padding-bottom: 10%;
+}
+main .contenido-izquierda {
+  grid-area: izquierda;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+main .contenido-izquierda:hover {
+  color: rgb(201, 201, 201);
+  background-color: rgba(20, 17, 61, 0.9);
+  text-decoration: none;
+  border-radius: 100;
+}
+main .contenido-izquierda h1 {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+main .contenido-izquierda a {
+  text-decoration: none;
+}
+main .contenido-derecha {
+  grid-area: derecha;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+main .contenido-derecha:hover {
+  background: rgba(20, 17, 61, 0.9);
+}
+main .contenido-derecha h1 {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+main .contenido-derecha a {
+  text-decoration: none;
+}
+main .contenido-abajo-izquierda {
+  grid-area: izquierda-abajo;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+main .contenido-abajo-izquierda:hover {
+  color: rgb(201, 201, 201);
+  background-color: rgba(20, 17, 61, 0.9);
+  text-decoration: none;
+  border-radius: 100;
+}
+main .contenido-abajo-izquierda h1 {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+main .contenido-abajo-izquierda a {
+  text-decoration: none;
+}
+main .contenido-abajo-derecha {
+  grid-area: derecha-abajo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+main .contenido-abajo-derecha:hover {
+  background: rgba(20, 17, 61, 0.9);
+}
+main .contenido-abajo-derecha h1 {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+main .contenido-abajo-derecha a {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  main .cuerpo {
+    height: 100vh; /*VH significa viewport height altura maxima de la pantalla(altura del dispositivo). También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la*/
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25% /*aqui le digo cuantas columnas si pongo 2 vecex 100px son 2 columnas de 100 px*/
+    /*grid-template-rows: 200px 200px; /*aqui le digo cuantas filas va a tener, si pongo 2 veces 200px seran 2 filas*/
+    grid-template-columns: 1fr; /*aqui divido las columnas en fraccion 1fr = 1 fraccion si son 5 columnas cada fraccion son 20%*/
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "izquierda" "derecha" "izquierda-abajo" "derecha-abajo";
+    gap: 1rem 1rem; /*para darle separacion*/
+  }
+  main .container {
+    padding-bottom: 20%;
+  }
+}
+
+.pie {
+  background: rgba(20, 17, 61, 0.9);
+}
+
+.contenido-nosotros {
+  margin: 2rem 5rem 10rem 5rem;
+  background: rgba(20, 17, 61, 0.9);
+  border-radius: 5%;
+}
+
+.titulo-xl h2 {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  color: rgb(201, 201, 201);
+  background: rgba(20, 17, 61, 0.9);
+  border-radius: 5%;
+  justify-content: center; /*deja en el centro de la fila*/
+  align-items: center;
+  text-decoration: none;
+}
+
+.titulo-sm {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .titulo-xl {
+    display: none;
+  }
+  .titulo-sm {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    color: rgb(201, 201, 201);
+    background: rgba(20, 17, 61, 0.9);
+    border-radius: 5%;
+    justify-content: center; /*deja en el centro de la fila*/
+    align-items: center;
+    text-decoration: none;
+  }
+}
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(20, 17, 61, 0.9);
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #44a4ab;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #448aab;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: rgba(54, 51, 90, 0.9);
+  border-color: #315a81;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+span {
+  color: #ca043f;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.titulo-formulario {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.subtitulo-formulario {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: 1px solid #4892d8;
+}
+
+::-webkit-textarea-placeholder {
+  color: 1px solid #4892d8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #4892d8;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px 1px solid #4892d8;
+}/*# sourceMappingURL=style.css.map */
