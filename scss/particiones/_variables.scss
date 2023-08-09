@@ -3,3 +3,9 @@ $colorsecundario : rgba(243, 242, 242, 0.9);
 $fondo : rgb(84, 99, 136);
 $botonhover : rgba(36, 32, 94, 0.9);
 /*url("../image/fondo.jpg")*/
+@mixin flex($justify, $aling)  /*se usa con un @include flex-contenedores*/
+{
+   display: flex;
+   justify-content: $justify;
+   align-items: $aling;
+}

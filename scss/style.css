@@ -31,14 +31,9 @@ header .cabecera nav {
   display: fixed;
   flex-wrap: wrap;
   gap: 1rem;
-  align-content: center;
   display: flex;
   justify-content: center;
-}
-header .cabecera nav .logo {
-  display: flex;
-  justify-content: left;
-  list-style: none;
+  align-items: center;
 }
 @media (max-width: 800px) {
   header .cabecera nav .logo {
