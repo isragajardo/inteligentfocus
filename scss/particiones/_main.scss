@@ -1,11 +1,10 @@
 .titulo-xl h2{
   padding: 1rem 0 1rem 0;
-  display: flex;
   color:  rgb(0, 0, 0);
   background:$colorsecundario;
-  justify-content: center; /*deja en el centro de la fila*/
-  align-items: center;
+  @include flex (center,center);
   text-decoration: none;
+  transition: 0.7s;
   
 }
 .titulo-sm{
@@ -19,12 +18,10 @@
   }
   .titulo-sm{
     padding: 1rem 0 1rem 0;
-  display: flex;
-  color:  rgb(0, 0, 0);
-  background:$colorsecundario;
-  justify-content: center; /*deja en el centro de la fila*/
-  align-items: center;
-  text-decoration: none;
+    color:  rgb(0, 0, 0);
+    background:$colorsecundario;
+    text-decoration: none;
+    @include flex (center,center);
   
   }
 }
@@ -50,7 +47,7 @@ main{
 
     gap: 1rem 1rem; /*para darle separacion*/
     
-    background-color: $colorprincipal;
+    background: #c2ccf2;
     border-radius: 3%;
     margin-bottom: 1rem;
 }
@@ -74,7 +71,7 @@ main{
   border-radius: 100;
 }
 .contenido-izquierda h1{
-  color: rgb(201, 201, 201); 
+  color: black; 
   text-decoration:none;
   display: flex;
   justify-content: center;
@@ -100,7 +97,7 @@ main{
 }
 
 .contenido-derecha h1{
-  color: rgb(201, 201, 201); 
+  color: black; 
   text-decoration:none;
   display: flex;
   justify-content: center;
@@ -131,7 +128,7 @@ text-decoration:none;
 border-radius: 100;
 }
 .contenido-abajo-izquierda h1{
-color: rgb(201, 201, 201); 
+color: black; 
 text-decoration:none;
 display: flex;
 justify-content: center;
@@ -143,22 +140,24 @@ text-decoration: none;
 }
 
 .contenido-abajo-derecha{
+  color: black;
   grid-area: derecha-abajo;
   display: flex;
   justify-content: center; 
   align-items: center; 
   border-radius: 5%;
-  
 
   
 }
+
+
 .contenido-abajo-derecha:hover{
 background: $botonhover;
 
 }
 
 .contenido-abajo-derecha h1{
-color: rgb(201, 201, 201); 
+color: black;
 text-decoration:none;
 display: flex;
 justify-content: center;

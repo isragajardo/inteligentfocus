@@ -30,7 +30,7 @@ header
             flex-wrap: wrap;
             gap: 1rem; 
             align-content: center;  
-            @include flex(center);
+            @include flex(center,start);
 
             li a
            {

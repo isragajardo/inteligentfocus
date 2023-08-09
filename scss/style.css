@@ -6,24 +6,9 @@ $fondo : rgb(84, 99, 136);*/
 /*url("../image/fondo.jpg")*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: rgb(84, 99, 136);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/**********header************/
 /*url("../image/fondo.jpg")*/
 header {
-  background: rgba(4, 5, 48, 0.9);
+  background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
   top: 0;
 }
 header .cabecera nav {
@@ -60,7 +45,7 @@ header .cabecera nav .menu li a {
 }
 header .cabecera nav .menu li a:hover {
   color: rgb(201, 201, 201);
-  background-color: rgba(4, 5, 48, 0.9);
+  background-color: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
 }
 @media (max-width: 800px) {
   header .cabecera nav .menu {
@@ -70,12 +55,13 @@ header .cabecera nav .menu li a:hover {
 
 .titulo-xl h2 {
   padding: 1rem 0 1rem 0;
-  display: flex;
   color: rgb(0, 0, 0);
   background: rgba(243, 242, 242, 0.9);
-  justify-content: center; /*deja en el centro de la fila*/
+  display: flex;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: 0.7s;
 }
 
 .titulo-sm {
@@ -88,12 +74,12 @@ header .cabecera nav .menu li a:hover {
   }
   .titulo-sm {
     padding: 1rem 0 1rem 0;
-    display: flex;
     color: rgb(0, 0, 0);
     background: rgba(243, 242, 242, 0.9);
-    justify-content: center; /*deja en el centro de la fila*/
-    align-items: center;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 main .cuerpo {
@@ -105,7 +91,7 @@ main .cuerpo {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "izquierda derecha" "izquierda-abajo derecha-abajo";
   gap: 1rem 1rem; /*para darle separacion*/
-  background-color: rgba(4, 5, 48, 0.9);
+  background: #c2ccf2;
   border-radius: 3%;
   margin-bottom: 1rem;
 }
@@ -124,7 +110,7 @@ main .contenido-izquierda:hover {
   border-radius: 100;
 }
 main .contenido-izquierda h1 {
-  color: rgb(201, 201, 201);
+  color: black;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -145,7 +131,7 @@ main .contenido-derecha:hover {
   background: rgba(36, 32, 94, 0.9);
 }
 main .contenido-derecha h1 {
-  color: rgb(201, 201, 201);
+  color: black;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -170,7 +156,7 @@ main .contenido-abajo-izquierda:hover {
   border-radius: 100;
 }
 main .contenido-abajo-izquierda h1 {
-  color: rgb(201, 201, 201);
+  color: black;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -181,6 +167,7 @@ main .contenido-abajo-izquierda a {
   text-decoration: none;
 }
 main .contenido-abajo-derecha {
+  color: black;
   grid-area: derecha-abajo;
   display: flex;
   justify-content: center;
@@ -191,7 +178,7 @@ main .contenido-abajo-derecha:hover {
   background: rgba(36, 32, 94, 0.9);
 }
 main .contenido-abajo-derecha h1 {
-  color: rgb(201, 201, 201);
+  color: black;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -217,10 +204,6 @@ main .contenido-abajo-derecha a {
   }
 }
 
-.pie {
-  background: rgba(4, 5, 48, 0.9);
-}
-
 /*url("../image/fondo.jpg")*/
 .contenido-nosotros {
   border-radius: 8%;
@@ -232,7 +215,7 @@ main .contenido-abajo-derecha a {
 
 .cuerpo-nosotros .contenedor {
   margin: 2rem 5rem 10rem 5rem;
-  background: rgba(4, 5, 48, 0.9);
+  background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
 }
 
 .contact_form {
@@ -341,4 +324,28 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px 1px solid #4892d8;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*url("../image/fondo.jpg")*/
+.pie {
+  background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(22, 17, 93) 8%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/**********header************/
+/**********formulario contacto************/
+/**********fin formulario contacto************/
+/**********footer************//*# sourceMappingURL=style.css.map */

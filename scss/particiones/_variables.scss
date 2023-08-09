@@ -1,6 +1,7 @@
-$colorprincipal :  rgba(4, 5, 48, 0.9); 
+$colorprincipal :  linear-gradient(0deg, rgba(194,204,242,1) 3%, rgba(22,17,93,1) 8%);
 $colorsecundario : rgba(243, 242, 242, 0.9);
-$fondo : rgb(84, 99, 136);
+$colortercero :  rgba(22,17,93,1) 8%;
+$fondo : white;
 $botonhover : rgba(36, 32, 94, 0.9);
 /*url("../image/fondo.jpg")*/
 @mixin flex($justify, $aling)  /*se usa con un @include flex-contenedores*/
