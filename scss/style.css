@@ -331,6 +331,31 @@ p {
   background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
 }
 
+main .ias {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .ias p {
+  transition: 1s;
+  font-size: 22px;
+}
+main .ias .img {
+  transition: 1s;
+}
+@media (max-width: 800px) {
+  main .ias {
+    margin-top: 2rem;
+    gap: 1rem;
+    margin-left: 2rem;
+    width: 80vw;
+  }
+  main .ias a img {
+    width: 80vw;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
