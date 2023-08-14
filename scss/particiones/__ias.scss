@@ -1,32 +1,49 @@
 main
 {
     .caja
+
     {
-        padding: 20px;
-        
+        padding-top: 20px;
+              
         .caja_cajas
         {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            padding: 5px;
+            
+            
          .caja_cajas_cajitas
          {
-            background-color: pink;
-            height: 200px;
-            width: 200px;
-         }
-         .caja_cajas_cajitas:hover
-         {
-            background-color: red;
-            height: 200px;
-            width: 200px;
-         }
+            @include flex (center,center);
+            
+            
+            .caja_boton 
+            { 
+                
+                @include flex (center,center);
 
-         @media (max-width:800px) 
-         {
+                width: 200px;
+                height: 200px;
+                
+                .caja_imagen
+               {
+                
+                width: 180px;
+                height: 180px;
+
+               }
+               .caja_imagen:hover
+               {
+                
+                width: 200px;
+                height: 200px;
+                border: solid greenyellow 2px;
+
+               }
+             
+           
+            }
+            
             
          }
+
         }
     }
 }

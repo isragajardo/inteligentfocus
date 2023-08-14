@@ -328,28 +328,35 @@ p {
 
 /*url("../image/fondo.jpg")*/
 .pie {
+  padding: 20px;
   background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
 }
 
 main .caja {
-  padding: 20px;
-}
-main .caja .caja_cajas {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 5px;
+  padding-top: 20px;
 }
 main .caja .caja_cajas .caja_cajas_cajitas {
-  background-color: pink;
-  height: 200px;
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .caja .caja_cajas .caja_cajas_cajitas:hover {
-  background-color: red;
-  height: 200px;
+main .caja .caja_cajas .caja_cajas_cajitas .caja_boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
+  height: 200px;
 }
+main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen {
+  width: 180px;
+  height: 180px;
+}
+main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen:hover {
+  width: 200px;
+  height: 200px;
+  border: solid greenyellow 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
