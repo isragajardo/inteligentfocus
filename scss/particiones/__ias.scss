@@ -1,48 +1,32 @@
 main
 {
- .ias
- {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-    
-    p
+    .caja
     {
-        transition: 1s;
-        font-size: 22px;
-
-    }
-    .img
-    {
-        transition: 1s;
-
-    }
-    
- }
- @media (max-width:800px)  
- {
-    .ias
-    
-    {
-        margin-top: 2rem;
-        gap: 1rem;
-        margin-left: 2rem;
-        width: 80vw;
-
-        a
-    {
-        img
+        padding: 20px;
+        
+        .caja_cajas
         {
-            width: 80vw;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 5px;
+         .caja_cajas_cajitas
+         {
+            background-color: pink;
+            height: 200px;
+            width: 200px;
+         }
+         .caja_cajas_cajitas:hover
+         {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+         }
+
+         @media (max-width:800px) 
+         {
+            
+         }
         }
     }
-
-    }
-    
-    
-    
-    
- }
 }
