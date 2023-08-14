@@ -4,9 +4,23 @@ $colorsecundario : rgba(8, 7, 26, 0.9);
 $fondo : rgb(84, 99, 136);*/
 /*url("../image/fondo.jpg")*/
 /*url("../image/fondo.jpg")*/
+/*url("../image/fondo.jpg")*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap");
-/*url("../image/fondo.jpg")*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(22, 17, 93) 8%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 header {
   background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
   top: 0;
@@ -357,18 +371,9 @@ main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen:hover {
   border: solid greenyellow 2px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: rgb(22, 17, 93) 8%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+main .noticias iframe {
+  height: 100vh;
+  width: 100%;
 }
 
 /**********header************/

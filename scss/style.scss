@@ -3,17 +3,8 @@ $colorsecundario : rgba(8, 7, 26, 0.9);
 $fondo : rgb(84, 99, 136);*/
 /*url("../image/fondo.jpg")*/
 /*url("../image/fondo.jpg")*/
-$fondo : rgb(84, 99, 136);
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap');
 @import "./particiones/variables";
-@import "./particiones/header";
-@import "./particiones/main";
-@import "./particiones/nosotros";
-@import "./particiones/contacto";
-@import "./particiones/footer";
-@import "./particiones/_ias";
+$fondo : rgb(84, 99, 136);
 *{
   margin: 0;
   padding: 0;
@@ -29,6 +20,17 @@ body{
   
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@200&family=Russo+One&family=Space+Mono:wght@700&display=swap');
+
+@import "./particiones/header";
+@import "./particiones/main";
+@import "./particiones/nosotros";
+@import "./particiones/contacto";
+@import "./particiones/footer";
+@import "./particiones/_ias";
+@import "./particiones/_noticias";
+
 /**********header************/
 
 
