@@ -1,6 +1,5 @@
 /*url("../image/fondo.jpg")*/
 .contenido-nosotros {
-  border-radius: 8%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -8,6 +7,12 @@
 }
 
 .cuerpo-nosotros .contenedor {
-  margin: 2rem 5rem 10rem 5rem;
-  background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
+  background: linear-gradient(56deg, rgba(22, 17, 93, 0.7413340336) 28%, rgb(212, 221, 255) 100%);
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10%;
+}
+.cuerpo-nosotros .contenedor p {
+  font-size: 20px;
+  color: black;
 }/*# sourceMappingURL=nosotros.css.map */

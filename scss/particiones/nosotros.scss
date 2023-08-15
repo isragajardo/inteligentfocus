@@ -4,7 +4,7 @@
 
     
 
-    border-radius: 8%;
+    
     display: flex;
     align-content: center;
     justify-content: center;
@@ -12,8 +12,16 @@
 
   }
   .cuerpo-nosotros .contenedor{
-    margin: 2rem 5rem 10rem 5rem;
     background:$colorprincipal;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10%;
+    p
+    {
+      font-size: 20px;
+      color: black;
+    }
+    
 
 
   }

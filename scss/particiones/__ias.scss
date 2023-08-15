@@ -1,3 +1,4 @@
+@import "./variables";
 main
 {
     .caja
@@ -25,7 +26,11 @@ main
                 .caja_imagen
                {
 
+<<<<<<< HEAD
                 border-radius: 5%;
+=======
+                border-radius:20%;
+>>>>>>> staging
                 background-image: $colorboton;
                 width: 180px;
                 height: 180px;
@@ -36,7 +41,7 @@ main
                 
                 width: 200px;
                 height: 200px;
-                border: solid greenyellow 2px;
+                border: solid rgb(85, 47, 255) 2px;
 
                }
              

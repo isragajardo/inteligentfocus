@@ -1,12 +1,16 @@
-$colorprincipal :  linear-gradient(0deg, rgba(194,204,242,1) 3%, rgba(22,17,93,1) 8%);
+$colorprincipal :  linear-gradient(56deg, rgba(22,17,93,0.7413340336134453) 28%, rgba(212,221,255,1) 100%);
 $colorsecundario : rgba(243, 242, 242, 0.9);
-$colortercero :  rgba(22,17,93,1) 8%;
-$fondo : white;
+$colortercero : linear-gradient(56deg, rgba(239,240,255,0.7413340336134453) 100%, rgba(194,207,255,1) 100%);
+$fondo : linear-gradient(56deg, rgba(255,255,255,0.7413340336134453) 100%, rgba(194,207,255,1) 100%);
 $botonhover : rgba(36, 32, 94, 0.9);
+$colorboton : linear-gradient(56deg, rgba(239,238,255,0.7413340336134453) 1%, rgba(194,207,255,1) 100%);
 /*url("../image/fondo.jpg")*/
+$colorfoter : rgba(36, 32, 94, 0.9);
 @mixin flex($justify, $aling)  /*se usa con un @include flex-contenedores*/
 {
    display: flex;
    justify-content: $justify;
    align-items: $aling;
 }
+
+
