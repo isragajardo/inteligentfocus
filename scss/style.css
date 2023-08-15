@@ -107,6 +107,7 @@ header .cabecera nav .menu li a:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    padding-left: 40%;
   }
   header .dropdown-content a:hover {
     background-color: #ddd;
