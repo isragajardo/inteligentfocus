@@ -14,7 +14,7 @@ $fondo : rgb(84, 99, 136);*/
 }
 
 body {
-  background: rgb(22, 17, 93) 8%;
+  background: linear-gradient(56deg, rgba(239, 240, 255, 0.7413340336) 100%, rgb(194, 207, 255) 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -22,8 +22,11 @@ body {
 }
 
 header {
-  background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
+  background: linear-gradient(56deg, rgba(22, 17, 93, 0.7413340336) 28%, rgb(212, 221, 255) 100%);
   top: 0;
+}
+header .menu-sm {
+  display: none;
 }
 header .cabecera nav {
   list-style: none;
@@ -51,7 +54,7 @@ header .cabecera nav .menu {
 }
 header .cabecera nav .menu li a {
   font-family: "Bebas Neue", sans-serif;
-  color: rgb(201, 201, 201);
+  color: rgb(0, 0, 0);
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -59,11 +62,57 @@ header .cabecera nav .menu li a {
 }
 header .cabecera nav .menu li a:hover {
   color: rgb(201, 201, 201);
-  background-color: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
+  background-color: linear-gradient(56deg, rgba(22, 17, 93, 0.7413340336) 28%, rgb(212, 221, 255) 100%);
 }
 @media (max-width: 800px) {
   header .cabecera nav .menu {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    /* Estilos para el menú */
+    /* Estilos para el botón del menú */
+    /* Estilos para el contenido del menú desplegable */
+    /* Estilos para los elementos dentro del menú desplegable */
+    /* Cambia el color del enlace cuando se pasa el mouse por encima */
+    /* Muestra el menú desplegable cuando el botón se enfoca o se pasa el mouse por encima */
+  }
+  header .menu-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed center;
+  }
+  header .dropdown-btn {
+    background-color: #8590f0;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .dropdown-content {
+    display: none;
+    background: linear-gradient(56deg, rgba(239, 240, 255, 0.7413340336) 100%, rgb(194, 207, 255) 100%);
+    width: 100%;
+    z-index: 1;
+  }
+  header .dropdown-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  header .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  header .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
 
@@ -220,7 +269,6 @@ main .contenido-abajo-derecha a {
 
 /*url("../image/fondo.jpg")*/
 .contenido-nosotros {
-  border-radius: 8%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -228,8 +276,14 @@ main .contenido-abajo-derecha a {
 }
 
 .cuerpo-nosotros .contenedor {
-  margin: 2rem 5rem 10rem 5rem;
-  background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
+  background: linear-gradient(56deg, rgba(22, 17, 93, 0.7413340336) 28%, rgb(212, 221, 255) 100%);
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10%;
+}
+.cuerpo-nosotros .contenedor p {
+  font-size: 20px;
+  color: black;
 }
 
 .contact_form {
@@ -343,9 +397,10 @@ p {
 /*url("../image/fondo.jpg")*/
 .pie {
   padding: 20px;
-  background: linear-gradient(0deg, rgb(194, 204, 242) 3%, rgb(22, 17, 93) 8%);
+  background: rgba(36, 32, 94, 0.9);
 }
 
+/*url("../image/fondo.jpg")*/
 main .caja {
   padding-top: 20px;
 }
@@ -362,15 +417,15 @@ main .caja .caja_cajas .caja_cajas_cajitas .caja_boton {
   height: 200px;
 }
 main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen {
-  border-radius: 5%;
-  background-color: rgb(214, 229, 247);
+  border-radius: 20%;
+  background-image: linear-gradient(56deg, rgba(239, 238, 255, 0.7413340336) 1%, rgb(194, 207, 255) 100%);
   width: 180px;
   height: 180px;
 }
 main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen:hover {
   width: 200px;
   height: 200px;
-  border: solid greenyellow 2px;
+  border: solid rgb(85, 47, 255) 2px;
 }
 
 main .noticias iframe {

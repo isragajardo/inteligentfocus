@@ -1,5 +1,11 @@
 header
 {
+  .menu-sm
+  {
+    display: none;
+
+  }
+
   background: $colorprincipal; 
     top: 0;
     .cabecera nav
@@ -35,7 +41,7 @@ header
             li a
            {
               font-family: 'Bebas Neue', sans-serif;
-              color: rgb(201, 201, 201);
+              color: rgb(0, 0, 0);
               font-size: 1.8rem;
               font-weight: bold;
               text-decoration:none;
@@ -64,6 +70,60 @@ header
       
     
     
+    }
+
+    @media (max-width:800px)
+    {
+      .menu-sm
+      {
+        
+        @include flex(center,center);
+        position: fixed center;
+      }
+
+      
+      /* Estilos para el menú */
+   
+      
+      /* Estilos para el botón del menú */
+      .dropdown-btn {
+        background-color: #8590f0;
+        color: black;
+        border: none;
+        cursor: pointer;
+        @include flex (center,center);
+        
+      }
+      
+      /* Estilos para el contenido del menú desplegable */
+      .dropdown-content 
+      {
+        display: none;
+        background: $colortercero;
+        width: 100%;
+        z-index: 1;
+      }
+      
+      /* Estilos para los elementos dentro del menú desplegable */
+      .dropdown-content a {
+        @include flex (center,center);
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Cambia el color del enlace cuando se pasa el mouse por encima */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Muestra el menú desplegable cuando el botón se enfoca o se pasa el mouse por encima */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      
     }
     
     

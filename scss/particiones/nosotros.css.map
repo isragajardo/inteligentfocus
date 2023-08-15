@@ -1,1 +1,1 @@
-{"version":3,"sources":["_variables.scss","nosotros.scss","nosotros.css"],"names":[],"mappings":"AAKA,4BAAA;ACJA;EAKI,iBAAA;EACA,aAAA;EACA,qBAAA;EACA,uBAAA;EACA,mBAAA;ACHJ;;ADME;EACE,4BAAA;EACA,4EDfe;AEYnB","file":"nosotros.css"}
+{"version":3,"sources":["_variables.scss","nosotros.scss","nosotros.css"],"names":[],"mappings":"AAMA,4BAAA;ACLA;EAMI,aAAA;EACA,qBAAA;EACA,uBAAA;EACA,mBAAA;ACJJ;;ADOE;EACE,+FDde;ECef,aAAA;EACA,YAAA;EACA,kBAAA;ACJJ;ADKI;EAEE,eAAA;EACA,YAAA;ACJN","file":"nosotros.css"}
