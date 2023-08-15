@@ -362,6 +362,8 @@ main .caja .caja_cajas .caja_cajas_cajitas .caja_boton {
   height: 200px;
 }
 main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen {
+  border-radius: 5%;
+  background-color: rgb(214, 229, 247);
   width: 180px;
   height: 180px;
 }
