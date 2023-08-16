@@ -40,6 +40,7 @@ header .cabecera nav {
 @media (max-width: 800px) {
   header .cabecera nav .logo {
     margin-right: 3.5rem;
+    text-decoration: none;
   }
 }
 header .cabecera nav .menu {
@@ -51,6 +52,7 @@ header .cabecera nav .menu {
   display: flex;
   justify-content: center;
   align-items: start;
+  transition: 1s;
 }
 header .cabecera nav .menu li a {
   font-family: "Bebas Neue", sans-serif;
@@ -85,29 +87,27 @@ header .cabecera nav .menu li a:hover {
     position: fixed center;
   }
   header .dropdown-btn {
-    background-color: #8590f0;
-    color: black;
+    background-image: rgba(36, 32, 94, 0.9);
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
+    max-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.7s;
   }
   header .dropdown-content {
     display: none;
-    background: linear-gradient(56deg, rgba(239, 240, 255, 0.7413340336) 100%, rgb(194, 207, 255) 100%);
+    background-image: rgba(36, 32, 94, 0.9);
     width: 100%;
     z-index: 1;
   }
   header .dropdown-content a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    padding-left: 40%;
   }
   header .dropdown-content a:hover {
     background-color: #ddd;
@@ -399,6 +399,9 @@ p {
 .pie {
   padding: 20px;
   background: rgba(36, 32, 94, 0.9);
+}
+.pie .rrss ul a {
+  text-decoration: none;
 }
 
 /*url("../image/fondo.jpg")*/
