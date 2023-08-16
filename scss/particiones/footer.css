@@ -2,4 +2,7 @@
 .pie {
   padding: 20px;
   background: rgba(36, 32, 94, 0.9);
+}
+.pie .rrss ul a {
+  text-decoration: none;
 }/*# sourceMappingURL=footer.css.map */
