@@ -50,6 +50,8 @@ header
               font-weight: bold;
               text-decoration:none;
               padding: 1rem;
+              box-shadow: 1px 1px 10px;
+              border-radius: 10px;
     
             }
             li a:hover
@@ -58,6 +60,11 @@ header
                background-color:$colorprincipal;
         
             }  
+            li:hover
+            {
+              transform: translate(0, -5px);
+
+            }
 
    
      
@@ -83,6 +90,7 @@ header
         
         @include flex(center,center);
         position: fixed center;
+        
       }
 
       
@@ -98,7 +106,7 @@ header
         max-width: 100px;
         @include flex (center,center);
         transition: 0.7s;
-        
+        box-shadow: black 2px 2px 20px;
         
         
       }

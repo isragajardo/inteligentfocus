@@ -61,10 +61,15 @@ header .cabecera nav .menu li a {
   font-weight: bold;
   text-decoration: none;
   padding: 1rem;
+  box-shadow: 1px 1px 10px;
+  border-radius: 10px;
 }
 header .cabecera nav .menu li a:hover {
   color: rgb(201, 201, 201);
   background-color: linear-gradient(56deg, rgba(22, 17, 93, 0.7413340336) 28%, rgb(212, 221, 255) 100%);
+}
+header .cabecera nav .menu li:hover {
+  transform: translate(0, -5px);
 }
 @media (max-width: 800px) {
   header .cabecera nav .menu {
@@ -96,6 +101,7 @@ header .cabecera nav .menu li a:hover {
     justify-content: center;
     align-items: center;
     transition: 0.7s;
+    box-shadow: black 2px 2px 20px;
   }
   header .dropdown-content {
     display: none;
@@ -432,11 +438,12 @@ main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen {
 main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen:hover {
   width: 200px;
   height: 200px;
-  border: solid rgb(85, 47, 255) 2px;
+  border: rgb(85, 47, 255) 2px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: black 5px 5px 10px;
 }
 main .caja .caja_cajas .caja_cajas_cajitas .caja_boton:hover {
   transition: 0.7s;
@@ -448,14 +455,15 @@ main .caja .caja_cajas .caja_cajas_cajitas:hover .descripcion {
 main .caja .caja_cajas .caja_cajas_cajitas:hover .descripcion .descripcion_ia {
   padding: 10px;
   font-size: 13px;
-  background: linear-gradient(56deg, rgba(22, 17, 93, 0.7413340336) 28%, rgb(212, 221, 255) 100%);
+  background: linear-gradient(0deg, rgba(43, 50, 147, 0.8211659664) 100%, rgb(194, 207, 255) 100%);
   font-family: "Courier New", Courier, monospace;
-  height: 200px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border-radius: 5%;
   transform: translate(-250px, 15px);
   position: absolute;
-  color: black;
+  color: rgb(255, 255, 255);
+  box-shadow: black 5px 5px 40px;
 }
 @media (max-width: 800px) {
   main .caja .caja_cajas .caja_cajas_cajitas:hover .descripcion .descripcion_ia {
