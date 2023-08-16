@@ -413,6 +413,9 @@ main .caja .caja_cajas .caja_cajas_cajitas {
   justify-content: center;
   align-items: center;
 }
+main .caja .caja_cajas .caja_cajas_cajitas .descripcion {
+  display: none;
+}
 main .caja .caja_cajas .caja_cajas_cajitas .caja_boton {
   display: flex;
   justify-content: center;
@@ -430,6 +433,29 @@ main .caja .caja_cajas .caja_cajas_cajitas .caja_boton .caja_imagen:hover {
   width: 200px;
   height: 200px;
   border: solid rgb(85, 47, 255) 2px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .caja .caja_cajas .caja_cajas_cajitas .caja_boton:hover {
+  transition: 0.7s;
+}
+main .caja .caja_cajas .caja_cajas_cajitas:hover .descripcion {
+  transition: 1s;
+  display: flex;
+}
+main .caja .caja_cajas .caja_cajas_cajitas:hover .descripcion .descripcion_ia {
+  padding: 10px;
+  font-size: 13px;
+  background: linear-gradient(56deg, rgba(22, 17, 93, 0.7413340336) 28%, rgb(212, 221, 255) 100%);
+  font-family: "Courier New", Courier, monospace;
+  height: 200px;
+  width: 400px;
+  border-radius: 5%;
+  transform: translate(-30px, 15px);
+  position: absolute;
+  color: black;
 }
 
 main .noticias iframe {

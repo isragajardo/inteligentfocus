@@ -12,7 +12,13 @@ main
             
          .caja_cajas_cajitas
          {
+
+            .descripcion
+            {
+                display: none;
+            }
             @include flex (center,center);
+            
 
             
             
@@ -26,6 +32,7 @@ main
                 
                 .caja_imagen
                {
+                
 
                 border-radius:20%;
                 background-image: $colorboton;
@@ -39,6 +46,10 @@ main
                 width: 200px;
                 height: 200px;
                 border: solid rgb(85, 47, 255) 2px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
 
                 
@@ -48,8 +59,51 @@ main
              
            
             }
+
+            .caja_boton:hover
+            {
+                
+                transition: 0.7s;
+
+            }
             
             
+         }
+
+         .caja_cajas_cajitas:hover
+         {
+            
+            
+            .descripcion
+            {
+                transition: 1s;
+                display: flex;
+                
+                
+
+                .descripcion_ia
+                {
+                    padding: 10px;
+                    font-size: 13px;
+                    background: $colorprincipal; 
+                    font-family: 'Courier New', Courier, monospace;
+                    height:200px;
+                    width:400px;
+                    border-radius: 5%;
+                    transform: translate(-30px, 15px);
+                    position: absolute;
+                    color :black;
+                    
+
+                    
+                    
+        
+    
+                }
+            
+            }
+
+
          }
 
          
