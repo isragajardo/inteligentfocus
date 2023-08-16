@@ -97,11 +97,9 @@ main
                     color :rgb(255, 255, 255);
                     box-shadow: black 5px 5px 40px;
 
-                    @media (max-width:800px)
-                    {
-                        transform: translate(-300px, 15px);
-                    }
+                    
                 }
+                
 
             
             }

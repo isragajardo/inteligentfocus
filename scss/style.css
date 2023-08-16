@@ -465,11 +465,6 @@ main .caja .caja_cajas .caja_cajas_cajitas:hover .descripcion .descripcion_ia {
   color: rgb(255, 255, 255);
   box-shadow: black 5px 5px 40px;
 }
-@media (max-width: 800px) {
-  main .caja .caja_cajas .caja_cajas_cajitas:hover .descripcion .descripcion_ia {
-    transform: translate(-300px, 15px);
-  }
-}
 
 main .noticias iframe {
   height: 100vh;
